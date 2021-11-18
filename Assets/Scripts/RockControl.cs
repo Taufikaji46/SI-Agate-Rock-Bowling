@@ -13,11 +13,21 @@ public class RockControl : MonoBehaviour
     public float rotationSpeed = 5f;
     public float throwPower = 30f;
     bool isThrowed = false;
-         
+    bool isMoving = true;
+
+    //tombol ke kiri
+    public KeyCode leftButton = KeyCode.A;
+
+    //tombol ke kanan
+    public KeyCode rightButton = KeyCode.D;
+
+    //kecepatan gerak
+    public float speed = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -29,10 +39,10 @@ public class RockControl : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 //xRot += Input.GetAxis("Mouse Y") * rotationSpeed;
-                yRot += Input.GetAxis("Mouse X") * rotationSpeed;
+                //yRot += Input.GetAxis("Mouse X") * rotationSpeed;
 
                 //lakukan rotasi dengan quaternion (rotasi sumbu x dan y)
-                transform.rotation = Quaternion.Euler(0f, yRot, 0f);
+                //transform.rotation = Quaternion.Euler(0f, yRot, 0f);
                 
                 //setting line renderer untuk helper arah
                 line.gameObject.SetActive(true);
@@ -45,8 +55,28 @@ public class RockControl : MonoBehaviour
                 rock.velocity = transform.forward * throwPower;
                 line.gameObject.SetActive(false);
                 isThrowed = true;
+                isMoving = false;
+            }
+
+            //gerakan kiri kanan
+            if (Input.GetKey(leftButton))
+            {
+                rock.velocity = new Vector3(-speed, 0, 0);
+            }
+            else if (Input.GetKey(rightButton))
+            {
+                rock.velocity = new Vector3(speed, 0, 0);
+            }
+            else
+            {
+                if (isMoving)
+                {
+                    rock.velocity = new Vector3(0, 0, 0);
+                }
+                
             }
         }
-       
+        
+        
     }   
 }
