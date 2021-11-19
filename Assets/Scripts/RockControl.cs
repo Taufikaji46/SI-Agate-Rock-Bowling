@@ -12,8 +12,8 @@ public class RockControl : MonoBehaviour
     float xRot, yRot = 0f;
     public float rotationSpeed = 5f;
     public float throwPower = 30f;
-    bool isThrowed = false;
-    bool isMoving = true;
+    public bool isThrowed = false;
+    public bool isMoving = true;
 
     //tombol ke kiri
     public KeyCode leftButton = KeyCode.A;
@@ -34,8 +34,27 @@ public class RockControl : MonoBehaviour
     void FixedUpdate()
     {
         transform.position = rock.position;
+  
         if (!isThrowed)
         {
+            //gerakan kiri kanan
+            if (Input.GetKey(leftButton))
+            {
+                rock.velocity = new Vector3(-speed, 0, 0);
+            }
+            else if (Input.GetKey(rightButton))
+            {
+                rock.velocity = new Vector3(speed, 0, 0);
+            }
+            else
+            {
+                if (isMoving)
+                {
+                    rock.velocity = new Vector3(0, 0, 0);
+                }
+
+            }
+
             if (Input.GetMouseButton(0))
             {
                 //xRot += Input.GetAxis("Mouse Y") * rotationSpeed;
@@ -58,23 +77,7 @@ public class RockControl : MonoBehaviour
                 isMoving = false;
             }
 
-            //gerakan kiri kanan
-            if (Input.GetKey(leftButton))
-            {
-                rock.velocity = new Vector3(-speed, 0, 0);
-            }
-            else if (Input.GetKey(rightButton))
-            {
-                rock.velocity = new Vector3(speed, 0, 0);
-            }
-            else
-            {
-                if (isMoving)
-                {
-                    rock.velocity = new Vector3(0, 0, 0);
-                }
-                
-            }
+            
         }
         
         
