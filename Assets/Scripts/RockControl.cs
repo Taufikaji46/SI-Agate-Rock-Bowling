@@ -58,10 +58,10 @@ public class RockControl : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 //xRot += Input.GetAxis("Mouse Y") * rotationSpeed;
-                //yRot += Input.GetAxis("Mouse X") * rotationSpeed;
+                yRot += Input.GetAxis("Mouse X") * rotationSpeed;
 
                 //lakukan rotasi dengan quaternion (rotasi sumbu x dan y)
-                //transform.rotation = Quaternion.Euler(0f, yRot, 0f);
+                transform.rotation = Quaternion.Euler(0f, yRot, 0f);
                 
                 //setting line renderer untuk helper arah
                 line.gameObject.SetActive(true);
