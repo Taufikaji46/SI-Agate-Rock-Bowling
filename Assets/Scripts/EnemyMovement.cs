@@ -7,6 +7,7 @@ public class EnemyMovement : MonoBehaviour
     public Score tambahScore;
     public Transform[] target;
     public float kecepatan;
+    public int scoreValue = 10;
 
     private int current;
 
@@ -24,6 +25,7 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.tag == "target1")
         {
             Destroy(gameObject);
+            Debug.Log("ancur");
         }
             if (collision.gameObject.tag == "Player")
             {

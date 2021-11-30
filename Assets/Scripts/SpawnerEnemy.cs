@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class SpawnerEnemy : MonoBehaviour
 {
-    public GameObject capsule;
-    public Transform lokasi;
+    public Score score;
+
+    [SerializeField]
+    private GameObject lokasi;
+
+    [SerializeField]
+    private GameObject enemyPrefab;
+
+    [SerializeField]
+    private float EnemyInterval = 3.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawnerenermy());
+        StartCoroutine(spawnEnemy(EnemyInterval, enemyPrefab));
     }
 
-    IEnumerator spawnerenermy()
+    private IEnumerator spawnEnemy(float interval, GameObject enemy)
     {
-        spawn();
-        yield return new WaitForSeconds(3); //setiap 3 detik
-    }
+        yield return new WaitForSeconds(interval);
+        GameObject newEnemy = Instantiate(enemy, new Vector3(lokasi.transform.position.x, lokasi.transform.position.y, lokasi.transform.position.z), Quaternion.identity);
+        newEnemy.GetComponent<EnemyMovement>().tambahScore = score;
+        StartCoroutine(spawnEnemy(interval, enemy));
 
-    public void spawn()
-    {
-        Instantiate(capsule, new Vector3(lokasi.transform.position.x, lokasi.transform.position.y, lokasi.transform.position.z), Quaternion.identity);
     }
 }
