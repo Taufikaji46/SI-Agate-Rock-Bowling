@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.tag == "target1")
         {
             nyawa.nyawakurang(2);
-            Debug.Log("kena");
+            //Debug.Log("kena");
             gameObject.SetActive(false);
         }
             if (collision.gameObject.tag == "Player")
@@ -37,7 +37,7 @@ public class EnemyMovement : MonoBehaviour
                     dead();
                     tambahScore.updateScore(1);
                 }
-                Debug.Log("ancur");
+                //Debug.Log("ancur");
             }
     }
 
