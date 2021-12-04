@@ -34,6 +34,31 @@ public class RockSelection : MonoBehaviour
     void Update()
     {
         noSwitch = rockControl1.isThrowed || rockControl2.isThrowed || rockControl3.isThrowed;
+        //which active
+        if (rock1Active)
+        {
+            rock2.transform.position = rock1.transform.position;
+            rock3.transform.position = rock1.transform.position;
+            rock2.transform.rotation = rock1.transform.rotation;
+            rock3.transform.rotation = rock1.transform.rotation;
+        }
+
+        else if (rock2Active)
+        {
+            rock1.transform.position = rock2.transform.position;
+            rock3.transform.position = rock2.transform.position;
+            rock1.transform.rotation = rock2.transform.rotation;
+            rock3.transform.rotation = rock2.transform.rotation;
+        }
+
+        else if (rock3Active)
+        {
+            rock1.transform.position = rock3.transform.position;
+            rock2.transform.position = rock3.transform.position;
+            rock1.transform.rotation = rock3.transform.rotation;
+            rock2.transform.rotation = rock3.transform.rotation;
+        }
+
         if (!noSwitch)
         {
             if (Input.GetKey(rockSelect1))
@@ -64,24 +89,7 @@ public class RockSelection : MonoBehaviour
                 rock3Active = true;
             }
 
-            //which active
-            if (rock1Active)
-            {
-                rock2.transform.position = rock1.transform.position;
-                rock3.transform.position = rock1.transform.position;
-            }
-
-            else if (rock2Active)
-            {
-                rock1.transform.position = rock2.transform.position;
-                rock3.transform.position = rock2.transform.position;
-            }
-
-            else if (rock3Active)
-            {
-                rock1.transform.position = rock3.transform.position;
-                rock2.transform.position = rock3.transform.position;
-            }
+            
         }
         
     }

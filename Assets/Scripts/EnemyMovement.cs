@@ -6,8 +6,9 @@ public class EnemyMovement : MonoBehaviour
 {
     public Score tambahScore;
     public Transform[] target;
+    public PlayerHealth nyawa;
+    public int hpEnemy = 2;
     public float kecepatan;
-    public int scoreValue = 10;
 
     private int current;
 
@@ -24,14 +25,24 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "target1")
         {
-            Destroy(gameObject);
-            Debug.Log("ancur");
+            nyawa.nyawakurang(2);
+            Debug.Log("kena");
+            gameObject.SetActive(false);
         }
             if (collision.gameObject.tag == "Player")
             {
-                Destroy(gameObject);
-                tambahScore.updateScore(1);
+                hpEnemy -= 1;
+                if (hpEnemy <= 0)
+                {
+                    dead();
+                    tambahScore.updateScore(1);
+                }
                 Debug.Log("ancur");
             }
+    }
+
+    void dead()
+    {
+        gameObject.SetActive(false);
     }
 }

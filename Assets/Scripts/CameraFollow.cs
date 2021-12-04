@@ -4,15 +4,47 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject player;        //Public variable to store a reference to the player game object
+    public RockControl rock;
+    public RockControl rock2;
+    public RockControl rock3;
+    private Vector3 offset;            //Private variable to store the offset distance between the player and camera
+    private Vector3 startCamPosition;
+    private Quaternion startCamRotation;
+    public float camTime = 0.5f;
+    private Vector3 velocity = Vector3.zero;
+
+    [SerializeField]
+    private float z_offset = -47f;
+
+    // Use this for initialization
     void Start()
     {
-        
+        //ambil posisi awal camera
+        startCamPosition = transform.position;
+        startCamRotation = transform.rotation;
+        //Calculate and store the offset value by getting the distance between the player's position and camera's position.
+        offset = transform.position - player.transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    // LateUpdate is called after Update each frame
+    void LateUpdate()
     {
-        
+        if (transform.position.z < z_offset)
+        {
+            // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
+            Vector3 desiredPosition = player.transform.position + offset;
+            transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, camTime);
+            transform.rotation = Quaternion.Euler(30f, player.transform.rotation.y, 0f);
+
+
+        }
+                
+        else if(rock.isResetting == true || rock2.isResetting == true || rock3.isResetting == true)
+        {
+            transform.position = startCamPosition;
+            transform.rotation = startCamRotation;
+        }
+
     }
 }

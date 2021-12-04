@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    public int currentscore = 99;
+    int currentscore = 99;
     public GameObject panelScore;
 
     public void Start()
@@ -12,7 +12,6 @@ public class Score : MonoBehaviour
         currentscore = 0;
         updateScore(0);
     }
-
     public void updateScore(int score)
     {
         currentscore += score;
