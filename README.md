@@ -1,5 +1,6 @@
 # SI-Agate-Rock-Bowling
-
-## yang di branch master itu yang aku commit
+##ChangeLog
 <br />
-tempat taufiq di branch updated
+Spawner Fixed and health system added to the game
+<br />
+Only need to implement the GDD to Project
