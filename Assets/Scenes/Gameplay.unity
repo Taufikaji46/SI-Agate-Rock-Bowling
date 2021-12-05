@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 85cf0b004bc4a654b9e501efcce47902, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.18338731, g: 0.22726277, b: 0.2960129, a: 1}
+  m_IndirectSpecularColor: {r: 0.5914024, g: 0.62417805, b: 0.6127655, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 625ebeb0354dce3429c77ad95dd026d0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 625ebeb0354dce3429c77ad95dd026d0,
         type: 3}
@@ -2400,6 +2400,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   line: {fileID: 1386901615}
   rock: {fileID: 692199612}
+  xRot: 0
+  yRot: 0
   rotationSpeed: 5
   throwPower: 40
   isThrowed: 0
@@ -2873,7 +2875,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7fe9b7211cd00c047b2a9993bc840b4b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7fe9b7211cd00c047b2a9993bc840b4b,
         type: 3}
@@ -5209,8 +5211,8 @@ Camera:
   m_GameObject: {fileID: 2073683113}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5250,14 +5252,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073683113}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 28.85, z: -61.8}
+  m_LocalRotation: {x: 0.2164396, y: -0, z: -0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 25, z: -62.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
 --- !u!114 &2073683117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5336,6 +5338,7 @@ MonoBehaviour:
   rock3: {fileID: 692199611}
   camTime: 0.3
   z_offset: -35
+  xCamRotate: 25
 --- !u!1 &2089104052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5371,6 +5374,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   line: {fileID: 1386901615}
   rock: {fileID: 2089104054}
+  xRot: 0
+  yRot: 0
   rotationSpeed: 5
   throwPower: 40
   isThrowed: 0
@@ -5594,6 +5599,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   line: {fileID: 1386901615}
   rock: {fileID: 2103503925}
+  xRot: 0
+  yRot: 0
   rotationSpeed: 5
   throwPower: 40
   isThrowed: 0

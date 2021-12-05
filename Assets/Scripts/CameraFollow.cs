@@ -17,8 +17,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     private float z_offset = -47f;
 
+    [SerializeField]
+    private float xCamRotate = 20f;
+
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         //ambil posisi awal camera
         startCamPosition = transform.position;
@@ -34,10 +37,8 @@ public class CameraFollow : MonoBehaviour
         {
             // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
             Vector3 desiredPosition = player.transform.position + offset;
+            transform.rotation = Quaternion.Euler(xCamRotate, player.transform.rotation.y, startCamRotation.z);
             transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, camTime);
-            transform.rotation = Quaternion.Euler(30f, player.transform.rotation.y, 0f);
-
-
         }
                 
         else if(rock.isResetting == true || rock2.isResetting == true || rock3.isResetting == true)

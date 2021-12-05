@@ -9,7 +9,7 @@ public class RockControl : MonoBehaviour
 
     //deklarasi kontrol batu
     public Rigidbody rock;
-    float xRot, yRot = 0f;
+    public float xRot, yRot = 0f;
     public float rotationSpeed = 5f;
     public float throwPower = 30f;
     public bool isThrowed = false;
