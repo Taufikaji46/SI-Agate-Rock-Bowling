@@ -8,6 +8,10 @@
 5. Penambahan boundary untuk enemy jika lewat batas maka health berkurang
 6. Penambahan Skybox
 
+### 9 December 2021
+1. Penambahan Gameover panel
+2. Retry bUtton
+
 <br />
 Spawner Fixed and health system added to the game
 <br />
