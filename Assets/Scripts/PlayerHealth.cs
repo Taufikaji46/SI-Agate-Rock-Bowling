@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -30,8 +31,12 @@ public class PlayerHealth : MonoBehaviour
     public void nyawakurang(int health)
     {
         nyawa -= health;
-
+        if (nyawa <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
         //UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
         // Debug.Log(UIScore.GetComponent<UnityEngine.UI.Text>().text);
     }
+
 }
