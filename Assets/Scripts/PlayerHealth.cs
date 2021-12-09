@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(totalEnemy);
+        //Debug.Log(totalEnemy);
         UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
         if(totalEnemy <= 0)
         {

@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 3359952753181939493}
   m_Layer: 0
   m_Name: CoL_egg02
-  m_TagString: target1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ MeshCollider:
   m_GameObject: {fileID: 267295230908453911}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30

@@ -50,7 +50,7 @@ public class EnemyMovement : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player3")
         {
-            hpEnemy -= 3;
+            hpEnemy -= 5;
             if (hpEnemy <= 0)
             {
                 dead();
