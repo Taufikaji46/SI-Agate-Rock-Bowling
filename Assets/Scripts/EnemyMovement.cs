@@ -29,16 +29,36 @@ public class EnemyMovement : MonoBehaviour
             //Debug.Log("kena");
             gameObject.SetActive(false);
         }
-            if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
+        {
+             hpEnemy -= 1;
+             if (hpEnemy <= 0)
+             {
+                dead();
+                tambahScore.updateScore(1);
+             }
+             //Debug.Log("ancur");
+        }
+        else if (collision.gameObject.tag == "Player2")
+        {
+            hpEnemy -= 2;
+            if (hpEnemy <= 0)
             {
-                hpEnemy -= 1;
-                if (hpEnemy <= 0)
-                {
-                    dead();
-                    tambahScore.updateScore(1);
-                }
-                //Debug.Log("ancur");
+                dead();
+                tambahScore.updateScore(1);
             }
+            //Debug.Log("ancur");
+        }
+        else if (collision.gameObject.tag == "Player3")
+        {
+            hpEnemy -= 3;
+            if (hpEnemy <= 0)
+            {
+                dead();
+                tambahScore.updateScore(1);
+            }
+            //Debug.Log("ancur");
+        }
     }
 
     void dead()

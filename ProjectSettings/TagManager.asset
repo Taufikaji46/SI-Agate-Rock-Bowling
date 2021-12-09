@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Line
   - target1
+  - Player2
+  - Player3
   layers:
   - Default
   - TransparentFX
