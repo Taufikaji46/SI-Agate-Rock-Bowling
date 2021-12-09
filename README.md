@@ -16,3 +16,12 @@
 Spawner Fixed and health system added to the game
 <br />
 Only need to implement the GDD to Project
+
+### 9 December 2021
+1. Penambahan bug fixing pada jalannya musuh
+2. Rotasi arah musuh
+
+<br />
+Spawner Fixed and health system added to the game
+<br />
+Only need to implement the GDD to Project
