@@ -6,18 +6,26 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+    [SerializeField]
     public static int nyawa;
+    public int nyawaAwal = 3;
+    
+    public static int totalEnemy = 9;
     public GameObject UIScore;
 
     void Start()
     {
-        nyawa = 10;
-        
+        nyawa = nyawaAwal;
     }
 
     private void Update()
     {
+        Debug.Log(totalEnemy);
         UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
+        if(totalEnemy <= 0)
+        {
+            SceneManager.LoadScene("Winning");
+        }
     }
 
     /*public void nyawakurang(int health)
@@ -37,6 +45,12 @@ public class PlayerHealth : MonoBehaviour
         }
         //UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
         // Debug.Log(UIScore.GetComponent<UnityEngine.UI.Text>().text);
+    }
+    
+    
+    private void WinningGame(int totalEnemy)
+    {
+        SceneManager.LoadScene("Win");
     }
 
 }

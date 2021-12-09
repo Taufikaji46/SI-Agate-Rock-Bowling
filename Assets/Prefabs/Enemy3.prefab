@@ -106,6 +106,7 @@ MonoBehaviour:
   - {fileID: 2966264974810034381, guid: c6ee8be1ada6e7147829c374ecb87d23, type: 3}
   nyawa: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074, type: 3}
   hpEnemy: 3
+  nyawaKurangDino: 2
   kecepatan: 5
 --- !u!54 &3327933219297196404
 Rigidbody:

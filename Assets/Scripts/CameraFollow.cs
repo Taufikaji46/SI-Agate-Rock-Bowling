@@ -31,7 +31,7 @@ public class CameraFollow : MonoBehaviour
     }
 
     // LateUpdate is called after Update each frame
-    void LateUpdate()
+    void FixedUpdate()
     {
         if (transform.position.z < z_offset)
         {

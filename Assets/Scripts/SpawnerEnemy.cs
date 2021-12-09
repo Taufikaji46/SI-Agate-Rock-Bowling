@@ -15,8 +15,7 @@ public class SpawnerEnemy : MonoBehaviour
     [SerializeField]
     private float EnemyInterval = 3.5f;
 
-    [SerializeField]
-    private int maxEnemyCount = 1;
+    public int maxEnemyCount = 1;
 
     private int enemyCount = 0;
 

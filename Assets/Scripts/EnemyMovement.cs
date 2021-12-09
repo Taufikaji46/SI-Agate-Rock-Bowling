@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     public Transform[] target;
     public PlayerHealth nyawa;
     public int hpEnemy = 2;
+    public int nyawaKurangDino = 1;
     public float kecepatan;
 
     private int current;
@@ -25,9 +26,10 @@ public class EnemyMovement : MonoBehaviour
     {
         if(collision.gameObject.tag == "target1")
         {
-            nyawa.nyawakurang(2);
+            nyawa.nyawakurang(nyawaKurangDino);
             //Debug.Log("kena");
             gameObject.SetActive(false);
+            PlayerHealth.totalEnemy -= 1;
         }
         if (collision.gameObject.tag == "Player")
         {
@@ -56,7 +58,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 dead();
                 tambahScore.updateScore(1);
-            }
+             }
             //Debug.Log("ancur");
         }
     }
@@ -64,5 +66,6 @@ public class EnemyMovement : MonoBehaviour
     void dead()
     {
         gameObject.SetActive(false);
+        PlayerHealth.totalEnemy -= 1;
     }
 }
