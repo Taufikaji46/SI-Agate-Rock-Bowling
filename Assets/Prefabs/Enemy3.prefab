@@ -102,6 +102,7 @@ MonoBehaviour:
   tambahScore: {fileID: 6480549722111945542, guid: 1caccb2bbad186149a112e38aff55e19,
     type: 3}
   target:
+  - {fileID: 3516814746374656059, guid: c761435cf3a1ffa468d8ad78609a866e, type: 3}
   - {fileID: 5804440500615281489, guid: 4318e4b9a01e9114983973f5b65ad6ab, type: 3}
   - {fileID: 2966264974810034381, guid: c6ee8be1ada6e7147829c374ecb87d23, type: 3}
   nyawa: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074, type: 3}
