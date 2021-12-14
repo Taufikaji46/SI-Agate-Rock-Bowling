@@ -25,3 +25,13 @@ Only need to implement the GDD to Project
 Spawner Fixed and health system added to the game
 <br />
 Only need to implement the GDD to Project
+
+### 9 December 2021
+1. Penambahan object gua
+2. Penambahan object kolam
+3. Penambahan object dino triceratops
+
+<br />
+game playable
+<br />
+
