@@ -16,13 +16,14 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         nyawa = nyawaAwal;
+        totalEnemy = 9;
     }
 
     private void Update()
     {
-        //Debug.Log(totalEnemy);
+        Debug.Log(totalEnemy);
         UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
-        if(totalEnemy <= 0)
+        if(totalEnemy <= 0 && nyawa >= 1)
         {
             SceneManager.LoadScene("Winning");
         }
