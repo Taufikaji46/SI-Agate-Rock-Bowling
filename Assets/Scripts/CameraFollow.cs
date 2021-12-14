@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
     private Quaternion startCamRotation;
     public float camTime = 0.5f;
     private Vector3 velocity = Vector3.zero;
+    bool triggerCam = false;
 
     [SerializeField]
     private float z_offset = -47f;
@@ -33,7 +34,7 @@ public class CameraFollow : MonoBehaviour
     // LateUpdate is called after Update each frame
     void FixedUpdate()
     {
-        if (transform.position.z < z_offset)
+        if (transform.position.z < z_offset && !triggerCam)
         {
             // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
             Vector3 desiredPosition = player.transform.position + offset;
@@ -43,8 +44,17 @@ public class CameraFollow : MonoBehaviour
                 
         else if(rock.isResetting == true || rock2.isResetting == true || rock3.isResetting == true)
         {
+            triggerCam = false;
             transform.position = startCamPosition;
             transform.rotation = startCamRotation;
+        }
+        
+
+        else if (transform.position.z >= z_offset)
+        {
+            transform.position = startCamPosition;
+            transform.rotation = startCamRotation;
+            triggerCam = true;
         }
 
     }
