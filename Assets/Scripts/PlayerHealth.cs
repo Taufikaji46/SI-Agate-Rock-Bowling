@@ -13,10 +13,8 @@ public class PlayerHealth : MonoBehaviour
     public static int totalEnemy = 9;
     public GameObject UIScore;
 
-    public Image[] hearts;
-    public Sprite fullHearts;
-    public Sprite emptyHearts;
-
+    public GameObject[] hearts;
+    
     void Start()
     {
         nyawa = nyawaAwal;
@@ -30,20 +28,20 @@ public class PlayerHealth : MonoBehaviour
         {
             if (i < nyawa)
             {
-                hearts[i].sprite = fullHearts;
+                
             }
             else
             {
-                hearts[i].sprite = emptyHearts;
+                hearts[i].transform.localScale = new Vector3(0f, 0f, 0f);
             }
 
             if (i < nyawaAwal)
             {
-                hearts[i].enabled = true;
+                hearts[i].SetActive(true);
             }
             else
             {
-                hearts[i].enabled = false;
+                hearts[i].SetActive(false);
             }
         }
 
