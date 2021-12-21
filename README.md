@@ -31,6 +31,12 @@ Only need to implement the GDD to Project
 2. Penambahan object kolam
 3. Penambahan object dino triceratops
 
+### 21 December 2021
+1. Perpaian UI Design
+2. Level Selection added
+3. Penyesuaian screenflow
+4. Kurang UI Winning/Gamever dan implementasi sound 
+
 <br />
 game playable
 <br />
