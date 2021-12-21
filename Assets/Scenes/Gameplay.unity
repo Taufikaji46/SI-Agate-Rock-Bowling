@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.5916643, g: 0.62434626, b: 0.61289144, a: 1}
+  m_IndirectSpecularColor: {r: 0.59166425, g: 0.62434644, b: 0.61289144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2178,8 +2178,8 @@ MonoBehaviour:
   lokasi: {fileID: 1148815326}
   enemyPrefab: {fileID: 3327933219297196394, guid: 04a59c67d0086184b99b5bee01bc68a3,
     type: 3}
-  EnemyInterval: 10.5
-  maxEnemyCount: 3
+  EnemyInterval: 5
+  maxEnemyCount: 5
 --- !u!1001 &1305060005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2681,10 +2681,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 1823167168}
-  enemyPrefab: {fileID: 3327933219297196394, guid: 9eb6ae0c395307b4b85a394886f1a7fc,
+  enemyPrefab: {fileID: 3327933219297196394, guid: a5a17d24f1f0ee544a32beff16ae2a42,
     type: 3}
-  EnemyInterval: 14
-  maxEnemyCount: 3
+  EnemyInterval: 10
+  maxEnemyCount: 5
 --- !u!4 &1823167170
 Transform:
   m_ObjectHideFlags: 0
@@ -3372,10 +3372,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 2139821176}
-  enemyPrefab: {fileID: 3327933219297196394, guid: 15acaf87b861e854b8ef76ade7b7d803,
+  enemyPrefab: {fileID: 3327933219297196394, guid: 00920465946cffe43b1f9f5669360d71,
     type: 3}
   EnemyInterval: 15
-  maxEnemyCount: 3
+  maxEnemyCount: 5
 --- !u!4 &2139821178
 Transform:
   m_ObjectHideFlags: 0
