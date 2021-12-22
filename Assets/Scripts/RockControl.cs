@@ -16,6 +16,8 @@ public class RockControl : MonoBehaviour
     public bool isMoving = true;
     public bool resetFlag = false;
     public bool isResetting = false;
+    
+    public RockSelection selectRock;
 
     //tombol ke kiri
     public KeyCode leftButton = KeyCode.A;
@@ -93,22 +95,16 @@ public class RockControl : MonoBehaviour
                 isThrowed = true;
                 isMoving = false;
                 resetFlag = true;
-                cooldownTemp = Time.time;
+                cooldownTemp = Time.time + cooldownRock;
             }
-
+            
+           
 
         }
 
-        else if (isThrowed)
-        {
-            if (Time.time - cooldownTemp > cooldownRock)
-            {
-                //isThrowed = false;
-            }
-        }
         //Debug.Log(isThrowed);
-        Debug.Log(rock.velocity.sqrMagnitude);
-        
+        //Debug.Log(rock.velocity.sqrMagnitude);
+
         //agar batu bowling kembali ke posisi awal
         if (transform.position.y < yBoundary)
         {
@@ -127,6 +123,13 @@ public class RockControl : MonoBehaviour
         isResetting = true;
         transform.position = startPos;
         rock.velocity = new Vector3(0, 0, 0);
+        selectRock.rock1.SetActive(true);
+        selectRock.rock2.SetActive(false);
+        selectRock.rock3.SetActive(false);
+        selectRock.rock1Active = true;
+        selectRock.rock2Active = false;
+        selectRock.rock3Active = false;
+        selectRock.rock1.transform.position = startPos;
         isMoving = true;
         isThrowed = false;
         resetFlag = false;

@@ -11,6 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public int nyawaAwal = 3;
     
     public static int totalEnemy = 9;
+    public int jumlahMusuh = 9;
     public GameObject UIScore;
 
     public GameObject[] hearts;
@@ -18,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
     void Start()
     {
         nyawa = nyawaAwal;
-        totalEnemy = 9;
+        totalEnemy = jumlahMusuh;
     }
 
     private void Update()
