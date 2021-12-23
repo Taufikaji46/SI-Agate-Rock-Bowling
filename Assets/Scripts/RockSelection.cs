@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RockSelection : MonoBehaviour
 {
@@ -29,21 +30,27 @@ public class RockSelection : MonoBehaviour
     public bool forceNoSwitch3 = false;
 
     //constraint agar tidak bisa bebas switch
+    [Header("Classic Rock")]
+    public Image classicRock;
     public float cooldownTime1 = 0f;
-    public float cooldownTime2 = 3f;
-    public float cooldownTime3 = 10f;
     bool isCooldown1 = false;
-    bool isCooldown2 = false;
-    bool isCooldown3 = false;
-    float fillCooldown1 = 0;
-    float fillCooldown2 = 0;
-    float fillCooldown3 = 0;
 
+    [Header("Fire Rock")]
+    public Image fireRock;
+    public float cooldownTime2 = 3f;
+    bool isCooldown2 = false;
+
+    [Header("Bombarda")]
+    public Image bombarda;
+    public float cooldownTime3 = 10f;
+    bool isCooldown3 = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        classicRock.fillAmount = 1;
+        fireRock.fillAmount = 1;
+        bombarda.fillAmount = 1;
     }
 
     // Update is called once per frame
@@ -88,7 +95,7 @@ public class RockSelection : MonoBehaviour
             if (Input.GetKey(rockSelect1) && !isCooldown1)
             {
                 isCooldown1 = true;
-                fillCooldown1 = 1;
+                classicRock.fillAmount = 0;
                 if (!forceNoSwitch1)
                 {
                     rock1.SetActive(true);
@@ -103,7 +110,7 @@ public class RockSelection : MonoBehaviour
             else if (Input.GetKey(rockSelect2) && !isCooldown2)
             {
                 isCooldown2 = true;
-                fillCooldown2 = 1;
+                fireRock.fillAmount = 0;
                 if (!forceNoSwitch2)
                 {
                     rock2.SetActive(true);
@@ -118,7 +125,7 @@ public class RockSelection : MonoBehaviour
             else if (Input.GetKey(rockSelect3) && !isCooldown3)
             {
                 isCooldown3 = true;
-                fillCooldown3 = 1;
+                bombarda.fillAmount = 0;
                 if (!forceNoSwitch3)
                 {
                     rock3.SetActive(true);
@@ -133,28 +140,28 @@ public class RockSelection : MonoBehaviour
 
             if (isCooldown1)
             {
-                fillCooldown1 -= 1 / cooldownTime1 * Time.deltaTime;
-                if(fillCooldown1 <= 0)
+                classicRock.fillAmount += 1 / cooldownTime1 * Time.fixedDeltaTime;
+                if(classicRock.fillAmount >= 1)
                 {
-                    fillCooldown1 = 0;
+                    classicRock.fillAmount = 1;
                     isCooldown1 = false;
                 }
             }
             if (isCooldown2)
             {
-                fillCooldown2 -= 1 / cooldownTime2 * Time.deltaTime;
-                if(fillCooldown2 <= 0)
+                fireRock.fillAmount += 1 / cooldownTime2 * Time.fixedDeltaTime;
+                if(fireRock.fillAmount >= 1)
                 {
-                    fillCooldown2 = 0;
+                    fireRock.fillAmount = 1;
                     isCooldown2 = false;
                 }
             }
             if (isCooldown3)
             {
-                fillCooldown3 -= 1 / cooldownTime3 * Time.deltaTime;
-                if(fillCooldown3 <= 0)
+                bombarda.fillAmount += 1 / cooldownTime3 * Time.fixedDeltaTime;
+                if(bombarda.fillAmount >= 1)
                 {
-                    fillCooldown3 = 0;
+                    bombarda.fillAmount = 1;
                     isCooldown3 = false;
                 }
             }

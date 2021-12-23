@@ -28,10 +28,6 @@ public class RockControl : MonoBehaviour
     //kecepatan gerak
     public float speed = 5.0f;
 
-    //set cooldown lempar
-    public float cooldownRock = 0.5f;
-    public float cooldownTemp = 0f;
-
     //untuk mengatur posisi start dan reset
     private Vector3 startPos;
     public float minVelocity = 0.05f;
@@ -95,7 +91,6 @@ public class RockControl : MonoBehaviour
                 isThrowed = true;
                 isMoving = false;
                 resetFlag = true;
-                cooldownTemp = Time.time + cooldownRock;
             }
             
            
