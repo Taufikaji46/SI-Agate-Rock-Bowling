@@ -108,7 +108,7 @@ public class RockControl : MonoBehaviour
 
         if ((resetFlag == true) && (rock.velocity.sqrMagnitude < minVelocity))
         {
-            StartCoroutine(SamplingPosisi(2f));
+            ResetPosition();
         }
 
     }
