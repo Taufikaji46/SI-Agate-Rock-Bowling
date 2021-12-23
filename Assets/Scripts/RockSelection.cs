@@ -137,35 +137,33 @@ public class RockSelection : MonoBehaviour
                 }
                 
             }
-
-            if (isCooldown1)
+        }
+        if (isCooldown1)
+        {
+            classicRock.fillAmount += 1 / cooldownTime1 * Time.fixedDeltaTime;
+            if (classicRock.fillAmount >= 1)
             {
-                classicRock.fillAmount += 1 / cooldownTime1 * Time.fixedDeltaTime;
-                if(classicRock.fillAmount >= 1)
-                {
-                    classicRock.fillAmount = 1;
-                    isCooldown1 = false;
-                }
-            }
-            if (isCooldown2)
-            {
-                fireRock.fillAmount += 1 / cooldownTime2 * Time.fixedDeltaTime;
-                if(fireRock.fillAmount >= 1)
-                {
-                    fireRock.fillAmount = 1;
-                    isCooldown2 = false;
-                }
-            }
-            if (isCooldown3)
-            {
-                bombarda.fillAmount += 1 / cooldownTime3 * Time.fixedDeltaTime;
-                if(bombarda.fillAmount >= 1)
-                {
-                    bombarda.fillAmount = 1;
-                    isCooldown3 = false;
-                }
+                classicRock.fillAmount = 1;
+                isCooldown1 = false;
             }
         }
-        Debug.Log(isCooldown2);
+        if (isCooldown2)
+        {
+            fireRock.fillAmount += 1 / cooldownTime2 * Time.fixedDeltaTime;
+            if (fireRock.fillAmount >= 1)
+            {
+                fireRock.fillAmount = 1;
+                isCooldown2 = false;
+            }
+        }
+        if (isCooldown3)
+        {
+            bombarda.fillAmount += 1 / cooldownTime3 * Time.fixedDeltaTime;
+            if (bombarda.fillAmount >= 1)
+            {
+                bombarda.fillAmount = 1;
+                isCooldown3 = false;
+            }
+        }
     }
 }

@@ -35,7 +35,7 @@ public class RockControl : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         startPos = transform.position;
     }
@@ -48,6 +48,12 @@ public class RockControl : MonoBehaviour
         if (isResetting && !resetFlag)
         {
             isResetting = false;
+            selectRock.rock3.SetActive(false);
+            selectRock.rock2.SetActive(false);
+            selectRock.rock1.SetActive(true);
+            selectRock.rock2Active = false;
+            selectRock.rock3Active = false;
+            selectRock.rock1Active = true;
         }
 
         if (!isThrowed)
@@ -92,9 +98,6 @@ public class RockControl : MonoBehaviour
                 isMoving = false;
                 resetFlag = true;
             }
-            
-           
-
         }
 
         //Debug.Log(isThrowed);
@@ -106,7 +109,7 @@ public class RockControl : MonoBehaviour
             ResetPosition();
         }
 
-        if ((resetFlag == true) && (rock.velocity.sqrMagnitude < minVelocity))
+        if (resetFlag && (rock.velocity.sqrMagnitude < minVelocity))
         {
             ResetPosition();
         }
@@ -118,26 +121,10 @@ public class RockControl : MonoBehaviour
         isResetting = true;
         transform.position = startPos;
         rock.velocity = new Vector3(0, 0, 0);
-        selectRock.rock1.SetActive(true);
-        selectRock.rock2.SetActive(false);
-        selectRock.rock3.SetActive(false);
-        selectRock.rock1Active = true;
-        selectRock.rock2Active = false;
-        selectRock.rock3Active = false;
         selectRock.rock1.transform.position = startPos;
         isMoving = true;
         isThrowed = false;
         resetFlag = false;
-    }
 
-    IEnumerator SamplingPosisi(float second)
-    {
-        //reset batu jika diam
-        //resetFlag = false;
-        ResetPosition();
-        yield return new WaitForSeconds(second);
-        
-        
     }
-
 }
