@@ -9,22 +9,36 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     public static int nyawa;
     public int nyawaAwal = 3;
-    
+
+    [SerializeField]
     public static int totalEnemy = 9;
+
     public int jumlahMusuh = 9;
     public GameObject UIScore;
 
     public GameObject[] hearts;
-    
+
+    [SerializeField]
+    public GameObject winningLevelUI;
+
+    [SerializeField]
+    public GameObject losingLevelUI;
+
     void Start()
     {
+        Time.timeScale = 1f;
         nyawa = nyawaAwal;
+        totalEnemy = jumlahMusuh;
+
+    }
+
+    private void Awake()
+    {
         totalEnemy = jumlahMusuh;
     }
 
     private void Update()
     {
-        //Debug.Log(totalEnemy);
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < nyawa)
@@ -49,33 +63,30 @@ public class PlayerHealth : MonoBehaviour
         UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
         if(totalEnemy <= 0 && nyawa >= 1)
         {
-            SceneManager.LoadScene("Winning");
+            winningLevel();
         }
-    }
+            if (nyawa <= 0)
+            {
+                losingLevel();
+            }
+        Debug.Log(totalEnemy);
 
-    /*public void nyawakurang(int health)
-    {
-        nyawa -= health;
-        Debug.Log(health); 
-        Debug.Log(nyawa);
-        UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
-    }*/
+    }
 
     public void nyawakurang(int health)
     {
         nyawa -= health;
-        if (nyawa <= 0)
-        {
-            SceneManager.LoadScene("GameOver");
-        }
-        //UIScore.GetComponent<UnityEngine.UI.Text>().text = nyawa.ToString();
-        // Debug.Log(UIScore.GetComponent<UnityEngine.UI.Text>().text);
     }
     
-    
-    private void WinningGame(int totalEnemy)
+    public void winningLevel()
     {
-        SceneManager.LoadScene("Win");
+        winningLevelUI.SetActive(true);
+    }
+
+    public void losingLevel()
+    {
+        losingLevelUI.SetActive(true);
+
     }
 
 }

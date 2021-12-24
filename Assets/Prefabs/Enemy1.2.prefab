@@ -108,6 +108,8 @@ MonoBehaviour:
   hpEnemy: 1
   nyawaKurangDino: 1
   kecepatan: 10
+  losingLevelUI: {fileID: 6071153725229616826, guid: 821fbda1993c22e49a3dd9698439afce,
+    type: 3}
 --- !u!54 &3327933219297196404
 Rigidbody:
   m_ObjectHideFlags: 0

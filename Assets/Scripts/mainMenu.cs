@@ -12,6 +12,6 @@ public class mainMenu : MonoBehaviour
 
     public void keluar()
     {
-        SceneManager.LoadScene(1);
+        Application.Quit();
     }
 }

@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Mainmenu.unity
     guid: 4bb478b6dd6ecdc4487014789a02f497
@@ -18,18 +15,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SelectionLevel.unity
     guid: 6370e66cc8d30ff44b4035ca7b718252
   - enabled: 1
-    path: Assets/Scenes/Gameplay.unity
+    path: Assets/Scenes/stage_1.unity
     guid: 74cb35ee484f825448123dd68e634590
   - enabled: 1
-    path: Assets/Scenes/Gameplay_2.unity
-    guid: b47796e8dd577794f81db073009bfa38
+    path: Assets/Scenes/temp.unity
+    guid: 8244f093aee277e4cb4602923953cbd2
   - enabled: 1
-    path: Assets/Scenes/Gameplay_3.unity
-    guid: 8ea6e018d59149f42a4c61c45e93fb6b
+    path: Assets/Scenes/stage_2.unity
+    guid: b1b1ef970fd76304f9606a4bc273629c
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 5d26d89d26e5e154b8aa9d92901dda22
+    path: Assets/Scenes/temp 1.unity
+    guid: 99e239f83dda8384f9f2214dbbaebe35
   - enabled: 1
-    path: Assets/Scenes/Winning.unity
-    guid: 10858cbfaa9ad9d44a3b550f791ff221
+    path: Assets/Scenes/stage_3.unity
+    guid: c2f6388c1c6330642b38d19207bc97f3
+  - enabled: 1
+    path: Assets/Scenes/temp 2.unity
+    guid: 3b4c597d87931dc42b6038e91cbfe7ca
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 5a6c7ce164e18fb468364d9c74f2fe3e
   m_configObjects: {}

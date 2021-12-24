@@ -8,19 +8,19 @@ public class Level : MonoBehaviour
     public void level1()
     {
         Debug.Log("get");
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("stage_1");
     }
 
     public void level2()
     {
         Debug.Log("got");
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("stage_2");
     }
 
     public void level3()
     {
         Debug.Log("gat");
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("stage_3");
     }
 
     public void back()

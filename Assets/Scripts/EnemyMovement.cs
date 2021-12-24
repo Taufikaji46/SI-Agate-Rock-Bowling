@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.tag == "target1")
         {
             nyawa.nyawakurang(nyawaKurangDino);
-            //Debug.Log("kena");
+
             gameObject.SetActive(false);
             PlayerHealth.totalEnemy -= 1;
         }
@@ -36,7 +36,7 @@ public class EnemyMovement : MonoBehaviour
                 dead();
                 tambahScore.updateScore(1);
              }
-             //Debug.Log("ancur");
+
         }
         else if (collision.gameObject.tag == "Player2")
         {
@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
                 dead();
                 tambahScore.updateScore(1);
             }
-            //Debug.Log("ancur");
+
         }
         else if (collision.gameObject.tag == "Player3")
         {
@@ -56,7 +56,7 @@ public class EnemyMovement : MonoBehaviour
                 dead();
                 tambahScore.updateScore(1);
              }
-            //Debug.Log("ancur");
+
         }
     }
 
@@ -86,17 +86,6 @@ public class EnemyMovement : MonoBehaviour
         Debug.DrawRay(transform.position, arah, Color.red);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, musuh, degreesPerSecond);
 
-        //set x and z 0f
-        //transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
     }
-
-    /*private void rotateAtMusuh()
-    {
-        Vector3 arahMusuh = target[current].position - transform.position; 
-        float singleStep = kecepatan * Time.deltaTime;
-
-        Vector3 arah = Vector3.RotateTowards(transform.forward, arahMusuh, singleStep, 0.0f);
-        transform.rotation = Quaternion.LookRotation(arah);
-        Debug.DrawRay(transform.position, arah, Color.red);
-    }*/
+    
 }
