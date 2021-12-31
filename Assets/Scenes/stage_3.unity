@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.59166425, g: 0.62434644, b: 0.61289144, a: 1}
+  m_IndirectSpecularColor: {r: 0.5916643, g: 0.62434626, b: 0.61289144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -695,7 +695,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294151013
 GameObject:
@@ -726,7 +726,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2103503924}
+  - {fileID: 2075543202}
   - {fileID: 2089104058}
   - {fileID: 692199616}
   m_Father: {fileID: 0}
@@ -744,7 +744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360e15d79744f6f4db26e20374d4fc31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rock1: {fileID: 2103503920}
+  rock1: {fileID: 2075543201}
   rock2: {fileID: 2089104052}
   rock3: {fileID: 692199610}
   rockSelect1: 49
@@ -753,7 +753,7 @@ MonoBehaviour:
   rock1Active: 1
   rock2Active: 0
   rock3Active: 0
-  rockControl1: {fileID: 2103503926}
+  rockControl1: {fileID: 2075543205}
   rockControl2: {fileID: 2089104053}
   rockControl3: {fileID: 692199611}
   noSwitch: 0
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nyawaAwal: 3
-  jumlahMusuh: 1
+  jumlahMusuh: 9
   UIScore: {fileID: 1137561333}
   hearts: []
   winningLevelUI: {fileID: 871796865}
@@ -2361,8 +2361,8 @@ MonoBehaviour:
   lokasi: {fileID: 1148815326}
   enemyPrefab: {fileID: 3327933219297196394, guid: 04a59c67d0086184b99b5bee01bc68a3,
     type: 3}
-  EnemyInterval: 1
-  maxEnemyCount: 1
+  EnemyInterval: 8
+  maxEnemyCount: 3
 --- !u!1001 &1305060005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2710,7 +2710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 770b1e3321cb97344b7b5f9ccc2bfe56, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 770b1e3321cb97344b7b5f9ccc2bfe56, type: 3}
       propertyPath: m_LocalScale.x
@@ -2861,7 +2861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1823167169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,10 +2876,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 1823167168}
-  enemyPrefab: {fileID: 3327933219297196394, guid: a5a17d24f1f0ee544a32beff16ae2a42,
+  enemyPrefab: {fileID: 3327933219297196394, guid: 9eb6ae0c395307b4b85a394886f1a7fc,
     type: 3}
   EnemyInterval: 10
-  maxEnemyCount: 5
+  maxEnemyCount: 3
 --- !u!4 &1823167170
 Transform:
   m_ObjectHideFlags: 0
@@ -3108,7 +3108,7 @@ PrefabInstance:
     - target: {fileID: 3516814746374656059, guid: f339e68e352079543950c00cfbf5f138,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 3516814746374656059, guid: f339e68e352079543950c00cfbf5f138,
         type: 3}
@@ -3162,6 +3162,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f339e68e352079543950c00cfbf5f138, type: 3}
+--- !u!1001 &2052701028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 294151014}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.29
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_Name
+      value: batu bowling
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa, type: 3}
 --- !u!1 &2073683113
 GameObject:
   m_ObjectHideFlags: 0
@@ -3247,7 +3316,7 @@ Transform:
   m_Children:
   - {fileID: 1904954031}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!114 &2073683117
 MonoBehaviour:
@@ -3321,13 +3390,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb49471688823c2478840807a09d9c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2103503920}
-  rock: {fileID: 2103503926}
+  player: {fileID: 2075543201}
+  rock: {fileID: 2075543205}
   rock2: {fileID: 2089104053}
   rock3: {fileID: 692199611}
   camTime: 0.3
   z_offset: -40
   xCamRotate: 20
+--- !u!1 &2075543201 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2052701028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2075543202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+    type: 3}
+  m_PrefabInstance: {fileID: 2052701028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2075543203
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075543201}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!135 &2075543204
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075543201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.009303049
+  m_Center: {x: 0, y: 0.000000029802322, z: -0.000000014901161}
+--- !u!114 &2075543205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075543201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f150eb520e7775d4399f6915c7ca7eba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  line: {fileID: 1386901615}
+  rock: {fileID: 2075543203}
+  xRot: 0
+  yRot: 0
+  rotationSpeed: 5
+  throwPower: 40
+  isThrowed: 0
+  isMoving: 1
+  resetFlag: 0
+  isResetting: 0
+  selectRock: {fileID: 294151015}
+  leftButton: 97
+  rightButton: 100
+  speed: 10
+  minVelocity: 70
+  yBoundary: -20
 --- !u!1 &2089104052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3471,149 +3609,6 @@ Transform:
   m_Father: {fileID: 294151014}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2103503920
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2103503924}
-  - component: {fileID: 2103503923}
-  - component: {fileID: 2103503922}
-  - component: {fileID: 2103503927}
-  - component: {fileID: 2103503925}
-  - component: {fileID: 2103503926}
-  m_Layer: 0
-  m_Name: RockBowler
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!23 &2103503922
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103503920}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: cbe81589dc9f9bd479918954222d4572, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2103503923
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103503920}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2103503924
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103503920}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: -15.65, z: -0.2}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 294151014}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &2103503925
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103503920}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 80
-  m_CollisionDetection: 0
---- !u!114 &2103503926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103503920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f150eb520e7775d4399f6915c7ca7eba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  line: {fileID: 1386901615}
-  rock: {fileID: 2103503925}
-  xRot: 0
-  yRot: 0
-  rotationSpeed: 5
-  throwPower: 40
-  isThrowed: 0
-  isMoving: 1
-  resetFlag: 0
-  isResetting: 0
-  selectRock: {fileID: 294151015}
-  leftButton: 97
-  rightButton: 100
-  speed: 10
-  minVelocity: 70
-  yBoundary: -20
---- !u!135 &2103503927
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2103503920}
-  m_Material: {fileID: 13400000, guid: 480ea3ca9a025d6489542526bd356463, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2114935852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3729,7 +3724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2139821177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3744,10 +3739,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 2139821176}
-  enemyPrefab: {fileID: 3327933219297196394, guid: 00920465946cffe43b1f9f5669360d71,
+  enemyPrefab: {fileID: 3327933219297196394, guid: 15acaf87b861e854b8ef76ade7b7d803,
     type: 3}
   EnemyInterval: 15
-  maxEnemyCount: 5
+  maxEnemyCount: 3
 --- !u!4 &2139821178
 Transform:
   m_ObjectHideFlags: 0
@@ -4538,7 +4533,7 @@ PrefabInstance:
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
       propertyPath: jumlahMusuh
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
