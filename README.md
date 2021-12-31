@@ -37,6 +37,11 @@ Only need to implement the GDD to Project
 3. Penyesuaian screenflow
 4. Kurang UI Winning/Gamever dan implementasi sound 
 
+### 24 December 2021
+1. Screenflow Implemented
+2. UI Done
+3. Kurang implementasi sound 
+
 <br />
 game playable
 <br />
