@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.999998, y: -39.999996}
+  m_AnchoredPosition: {x: -15, y: -39.999996}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &80806662
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d355fa8ef9579524c9daa335254d9372, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bf316306f6772ec4692bc63eba78171d, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1071,7 +1071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.999998, y: -39.999996}
+  m_AnchoredPosition: {x: 15, y: -39.999996}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &422843861
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 14be6e5e24b3b5f498b4127a82b758fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2d49e61db8ad88d46bcdc374ee3dd455, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nyawaAwal: 3
-  jumlahMusuh: 9
+  jumlahMusuh: 13
   UIScore: {fileID: 1137561333}
   hearts: []
   winningLevelUI: {fileID: 871796865}
@@ -2362,7 +2362,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 3327933219297196394, guid: 04a59c67d0086184b99b5bee01bc68a3,
     type: 3}
   EnemyInterval: 8
-  maxEnemyCount: 3
+  maxEnemyCount: 5
 --- !u!1001 &1305060005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3014,9 +3014,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 1823167168}
-  enemyPrefab: {fileID: 3327933219297196394, guid: a5a17d24f1f0ee544a32beff16ae2a42,
+  enemyPrefab: {fileID: 3327933219297196394, guid: 9eb6ae0c395307b4b85a394886f1a7fc,
     type: 3}
-  EnemyInterval: 10
+  EnemyInterval: 15
   maxEnemyCount: 3
 --- !u!4 &1823167170
 Transform:
@@ -3193,7 +3193,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2dc5667ef57342d459e5d6d80a821405, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5c1ac41fb52200498699b673620435b, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3739,10 +3739,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 2139821176}
-  enemyPrefab: {fileID: 3327933219297196394, guid: 15acaf87b861e854b8ef76ade7b7d803,
+  enemyPrefab: {fileID: 3327933219297196394, guid: 04a59c67d0086184b99b5bee01bc68a3,
     type: 3}
-  EnemyInterval: 15
-  maxEnemyCount: 3
+  EnemyInterval: 12
+  maxEnemyCount: 5
 --- !u!4 &2139821178
 Transform:
   m_ObjectHideFlags: 0
@@ -4563,7 +4563,7 @@ PrefabInstance:
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
       propertyPath: jumlahMusuh
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
