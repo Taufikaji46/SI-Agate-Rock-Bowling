@@ -47,4 +47,9 @@ public class Restart : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+
+    public void backtoMenu()
+    {
+        SceneManager.LoadScene("Mainmenu");
+    }
 }
