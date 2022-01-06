@@ -3002,6 +3002,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: batu bowling
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aecbdc6c59dfcdb4b8f14a13f129fdfa, type: 3}
 --- !u!1 &1618248754 stripped
@@ -3067,7 +3072,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618248754}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 480ea3ca9a025d6489542526bd356463, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
