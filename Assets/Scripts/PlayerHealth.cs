@@ -64,11 +64,13 @@ public class PlayerHealth : MonoBehaviour
         if(totalEnemy <= 0 && nyawa >= 1)
         {
             winningLevel();
+
         }
             if (nyawa <= 0)
             {
                 losingLevel();
-            }
+                
+        }
         Debug.Log(totalEnemy);
 
     }
@@ -81,12 +83,25 @@ public class PlayerHealth : MonoBehaviour
     public void winningLevel()
     {
         winningLevelUI.SetActive(true);
+        StartPause();
     }
 
     public void losingLevel()
     {
         losingLevelUI.SetActive(true);
+        StartPause();
 
+    }
+
+    public void StartPause()
+    {
+        // how many seconds to pause the game
+        StartCoroutine(PauseGame());
+    }
+    public IEnumerator PauseGame()
+    {
+        yield return new WaitForSeconds(1);
+        Time.timeScale = 0f;
     }
 
 }

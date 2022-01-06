@@ -7,11 +7,12 @@ public class mainMenu : MonoBehaviour
 {
     public void selection()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("SelectionLevel");
     }
 
     public void keluar()
     {
         Application.Quit();
+        Debug.Log("keluar");
     }
 }
