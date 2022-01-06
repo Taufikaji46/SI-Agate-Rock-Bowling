@@ -42,6 +42,10 @@ Only need to implement the GDD to Project
 2. UI Done
 3. Kurang implementasi sound 
 
+### 24 December 2021
+1. UI all stage fixed
+2. Pause menu all stage added
+
 <br />
 game playable
 <br />
