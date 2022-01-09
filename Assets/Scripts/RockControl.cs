@@ -78,8 +78,17 @@ public class RockControl : MonoBehaviour
 
             if (Input.GetMouseButton(0))
             {
+                var mousePos = Input.mousePosition;
+                //Debug.Log(mousePos);
                 //xRot += Input.GetAxis("Mouse Y") * rotationSpeed;
-                yRot += Input.GetAxis("Mouse X") * rotationSpeed;
+                if(mousePos.y >= 100)
+                {
+                    yRot += Input.GetAxis("Mouse X") * rotationSpeed;
+                }
+                else if(mousePos.y < 100)
+                {
+                    yRot -= Input.GetAxis("Mouse X") * rotationSpeed;
+                }
 
                 //lakukan rotasi dengan quaternion (rotasi sumbu x dan y)
                 transform.rotation = Quaternion.Euler(0f, yRot, 0f);

@@ -71,7 +71,7 @@ public class PlayerHealth : MonoBehaviour
                 losingLevel();
                 
         }
-        Debug.Log(totalEnemy);
+        //Debug.Log(totalEnemy);
 
     }
 
