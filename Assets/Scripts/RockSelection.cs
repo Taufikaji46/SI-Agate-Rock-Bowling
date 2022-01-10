@@ -19,6 +19,9 @@ public class RockSelection : MonoBehaviour
     public bool rock2Active = false;
     public bool rock3Active = false;
 
+    //particle effect
+    public GameObject particle_Rock2;
+
     //constraint agar tidak bisa switch setelah throw
     public RockControl rockControl1;
     public RockControl rockControl2;
@@ -64,6 +67,7 @@ public class RockSelection : MonoBehaviour
             rock3.transform.position = rock1.transform.position;
             rock2.transform.rotation = rock1.transform.rotation;
             rock3.transform.rotation = rock1.transform.rotation;
+            particle_Rock2.SetActive(false);
         }
 
         else if (rock2Active)
@@ -72,6 +76,7 @@ public class RockSelection : MonoBehaviour
             rock3.transform.position = rock2.transform.position;
             rock1.transform.rotation = rock2.transform.rotation;
             rock3.transform.rotation = rock2.transform.rotation;
+            particle_Rock2.SetActive(true);
         }
 
         else if (rock3Active)
@@ -80,6 +85,7 @@ public class RockSelection : MonoBehaviour
             rock2.transform.position = rock3.transform.position;
             rock1.transform.rotation = rock3.transform.rotation;
             rock2.transform.rotation = rock3.transform.rotation;
+            particle_Rock2.SetActive(false);
         }
               
 
