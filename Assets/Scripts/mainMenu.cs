@@ -7,12 +7,15 @@ public class mainMenu : MonoBehaviour
 {
     public void selection()
     {
+        FindObjectOfType<audioManager>().Play("sound");
         SceneManager.LoadScene("SelectionLevel");
+        Debug.Log("1");
     }
 
     public void keluar()
     {
-        Application.Quit();
-        Debug.Log("keluar");
+        FindObjectOfType<audioManager>().Play("sound");
+        SceneManager.LoadScene("Mainmenu 1");
+        Debug.Log("2");
     }
 }

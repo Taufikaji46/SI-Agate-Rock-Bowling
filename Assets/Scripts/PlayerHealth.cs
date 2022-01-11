@@ -71,7 +71,7 @@ public class PlayerHealth : MonoBehaviour
                 losingLevel();
                 
         }
-        //Debug.Log(totalEnemy);
+       
 
     }
 
@@ -103,5 +103,4 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(1);
         Time.timeScale = 0f;
     }
-
 }
