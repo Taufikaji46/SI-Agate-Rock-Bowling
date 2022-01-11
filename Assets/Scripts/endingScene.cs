@@ -7,12 +7,13 @@ public class endingScene : MonoBehaviour
 {
     public void quit()
     {
+        FindObjectOfType<audioManager>().Play("clickButton");
         Application.Quit();
     }
 
     public void backToMenu()
     {
-        
+        FindObjectOfType<audioManager>().Play("clickButton");
         SceneManager.LoadScene("Mainmenu");
     }
 }

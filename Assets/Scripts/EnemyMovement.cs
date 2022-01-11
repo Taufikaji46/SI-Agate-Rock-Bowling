@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     private int current;
 
+   
     void Update()
     {
         moveMusuh();
@@ -24,10 +25,11 @@ public class EnemyMovement : MonoBehaviour
         if(collision.gameObject.tag == "target1")
         {
             nyawa.nyawakurang(nyawaKurangDino);
-
             gameObject.SetActive(false);
             PlayerHealth.totalEnemy -= 1;
+            FindObjectOfType<audioManager>().Play("playerHit");
         }
+
         if (collision.gameObject.tag == "Player")
         {
              hpEnemy -= 1;
@@ -36,8 +38,10 @@ public class EnemyMovement : MonoBehaviour
                 dead();
                 tambahScore.updateScore(1);
              }
+            FindObjectOfType<audioManager>().Play("DinoHit");
 
         }
+
         else if (collision.gameObject.tag == "Player2")
         {
             hpEnemy -= 2;
@@ -46,8 +50,10 @@ public class EnemyMovement : MonoBehaviour
                 dead();
                 tambahScore.updateScore(1);
             }
+            FindObjectOfType<audioManager>().Play("DinoHit");
 
         }
+
         else if (collision.gameObject.tag == "Player3")
         {
             hpEnemy -= 5;
@@ -55,9 +61,11 @@ public class EnemyMovement : MonoBehaviour
             {
                 dead();
                 tambahScore.updateScore(1);
-             }
+            }
+            FindObjectOfType<audioManager>().Play("DinoHit");
 
         }
+
     }
 
     void dead()
