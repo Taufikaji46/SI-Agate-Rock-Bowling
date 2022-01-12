@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1009640971378883548}
   m_Layer: 0
   m_Name: Enemy1.2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,8 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4815a20ecbcf9b4cbc9820e91123476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tickSource: {fileID: 0}
-  tickSource2: {fileID: 0}
   tambahScore: {fileID: 6480549722111945542, guid: 1caccb2bbad186149a112e38aff55e19,
     type: 3}
   target:
@@ -109,9 +107,7 @@ MonoBehaviour:
   nyawa: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074, type: 3}
   hpEnemy: 1
   nyawaKurangDino: 1
-
-  kecepatan: 10
-
+  kecepatan: 0
 --- !u!54 &3327933219297196404
 Rigidbody:
   m_ObjectHideFlags: 0
