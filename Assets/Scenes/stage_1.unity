@@ -10827,7 +10827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nyawaAwal: 3
-  jumlahMusuh: 15
+  jumlahMusuh: 10
   UIScore: {fileID: 1137561333}
   hearts: []
   winningLevelUI: {fileID: 871796865}
@@ -11038,6 +11038,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: target 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3516814746374656058, guid: c761435cf3a1ffa468d8ad78609a866e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3516814746374656059, guid: c761435cf3a1ffa468d8ad78609a866e,
         type: 3}
@@ -36176,8 +36181,8 @@ MonoBehaviour:
   lokasi: {fileID: 1148815326}
   enemyPrefab: {fileID: 3327933219297196394, guid: 04a59c67d0086184b99b5bee01bc68a3,
     type: 3}
-  EnemyInterval: 8
-  maxEnemyCount: 5
+  EnemyInterval: 12
+  maxEnemyCount: 3
 --- !u!1001 &1305060005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41701,10 +41706,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1062694287}
   lokasi: {fileID: 1823167168}
-  enemyPrefab: {fileID: 3327933219297196394, guid: a5a17d24f1f0ee544a32beff16ae2a42,
+  enemyPrefab: {fileID: 3327933219297196394, guid: a6ca97bed7bd3294494bd5b0418394f8,
     type: 3}
   EnemyInterval: 10
-  maxEnemyCount: 5
+  maxEnemyCount: 3
 --- !u!4 &1823167170
 Transform:
   m_ObjectHideFlags: 0
@@ -46888,6 +46893,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: target
       objectReference: {fileID: 0}
+    - target: {fileID: 3516814746374656058, guid: f339e68e352079543950c00cfbf5f138,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3516814746374656059, guid: f339e68e352079543950c00cfbf5f138,
         type: 3}
       propertyPath: m_RootOrder
@@ -47386,8 +47396,8 @@ MonoBehaviour:
   lokasi: {fileID: 2139821176}
   enemyPrefab: {fileID: 3327933219297196394, guid: 00920465946cffe43b1f9f5669360d71,
     type: 3}
-  EnemyInterval: 12
-  maxEnemyCount: 5
+  EnemyInterval: 14
+  maxEnemyCount: 4
 --- !u!4 &2139821178
 Transform:
   m_ObjectHideFlags: 0
@@ -48164,7 +48174,7 @@ PrefabInstance:
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
       propertyPath: jumlahMusuh
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}

@@ -6150,7 +6150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nyawaAwal: 3
-  jumlahMusuh: 9
+  jumlahMusuh: 11
   UIScore: {fileID: 1137561333}
   hearts: []
   winningLevelUI: {fileID: 871796865}
@@ -12481,8 +12481,8 @@ MonoBehaviour:
   lokasi: {fileID: 1148815326}
   enemyPrefab: {fileID: 3327933219297196394, guid: 04a59c67d0086184b99b5bee01bc68a3,
     type: 3}
-  EnemyInterval: 8
-  maxEnemyCount: 6
+  EnemyInterval: 12
+  maxEnemyCount: 4
 --- !u!1001 &1305060005
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42084,7 +42084,7 @@ MonoBehaviour:
   lokasi: {fileID: 1823167168}
   enemyPrefab: {fileID: 3327933219297196394, guid: 9eb6ae0c395307b4b85a394886f1a7fc,
     type: 3}
-  EnemyInterval: 10
+  EnemyInterval: 16
   maxEnemyCount: 4
 --- !u!4 &1823167170
 Transform:
@@ -47639,8 +47639,8 @@ MonoBehaviour:
   lokasi: {fileID: 2139821176}
   enemyPrefab: {fileID: 3327933219297196394, guid: 15acaf87b861e854b8ef76ade7b7d803,
     type: 3}
-  EnemyInterval: 15
-  maxEnemyCount: 6
+  EnemyInterval: 18
+  maxEnemyCount: 3
 --- !u!4 &2139821178
 Transform:
   m_ObjectHideFlags: 0
@@ -48436,7 +48436,7 @@ PrefabInstance:
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
       propertyPath: jumlahMusuh
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6612417152236005186, guid: 3e2ca728c7cbe6946aae406dee2e7074,
         type: 3}
