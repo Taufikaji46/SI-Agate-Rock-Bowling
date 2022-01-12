@@ -12,22 +12,19 @@ public class gameOver : MonoBehaviour
 
     public void restartGame()
     {
-        //SceneManager.LoadScene(3, LoadSceneMode.Additive);
+        FindObjectOfType<audioManager>().Play("clickButton");
         SceneManager.LoadScene("temp");
-    }
-
-    public void nextLevel()
-    {
-        SceneManager.LoadScene(5);
     }
 
     public void selectLevel()
     {
-        SceneManager.LoadScene(2);
+        FindObjectOfType<audioManager>().Play("clickButton");
+        SceneManager.LoadScene("SelectionLevel");
     }
 
     public void backtoMenu()
     {
+        FindObjectOfType<audioManager>().Play("clickButton");
         SceneManager.LoadScene("Mainmenu");
     }
 }

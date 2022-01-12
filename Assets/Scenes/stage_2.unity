@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.5916643, g: 0.62434626, b: 0.61289144, a: 1}
+  m_IndirectSpecularColor: {r: 0.59166425, g: 0.62434644, b: 0.61289144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5482,7 +5482,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e0fd18859cb7b9041a27db7c1914c2a0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.35
+      value: 26.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0fd18859cb7b9041a27db7c1914c2a0,
         type: 3}
@@ -26640,17 +26640,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e0fd18859cb7b9041a27db7c1914c2a0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.29
+      value: -33.34
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0fd18859cb7b9041a27db7c1914c2a0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.0058346
+      value: 5.99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0fd18859cb7b9041a27db7c1914c2a0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.24
+      value: -33.24
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0fd18859cb7b9041a27db7c1914c2a0,
         type: 3}
@@ -41899,15 +41899,15 @@ MonoBehaviour:
     volume: 1
     pitch: 3
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: loseCondition
+    clip: {fileID: 8300000, guid: 75bbba8f8e4ca714aab001a618611e88, type: 3}
+    volume: 1
+    pitch: 3
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: winningCondition
+    clip: {fileID: 8300000, guid: ed8ccba41a5a99140bdd412b3f5ccc38, type: 3}
+    volume: 1
+    pitch: 3
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
@@ -48097,12 +48097,12 @@ PrefabInstance:
     - target: {fileID: 6071153725337003527, guid: 821fbda1993c22e49a3dd9698439afce,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 7.4
+      value: 320
       objectReference: {fileID: 0}
     - target: {fileID: 6071153725337003527, guid: 821fbda1993c22e49a3dd9698439afce,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -336.8
+      value: -137.6
       objectReference: {fileID: 0}
     - target: {fileID: 6071153725466829656, guid: 821fbda1993c22e49a3dd9698439afce,
         type: 3}

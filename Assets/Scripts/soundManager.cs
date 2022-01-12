@@ -52,54 +52,21 @@ public class soundManager : MonoBehaviour
         {
             soundOnicon.enabled = true;
             soundOfficon.enabled = false;
-            Debug.Log("lihat");
         }
         else
         {
             soundOnicon.enabled = false;
             soundOfficon.enabled = true;
-            Debug.Log("engga");
         }
     }
     private void Load()
     {
         muted = PlayerPrefs.GetInt("muted") == 1;
-        Debug.Log("loaded");
     }
 
     private void Save()
     {
         PlayerPrefs.SetInt("muted", muted ? 1 : 0);
-        Debug.Log("save");
     }
-
-   
-
-    /*public static soundManager instance { get; set; }
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-        
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }*/
-
 
 }

@@ -39,7 +39,6 @@ public class Rock : MonoBehaviour
         {
            // GameController.Instance.ExplodeAt(transform.position, _splashRadius);
         }
-        Debug.Log("kena");
     }
 
     void Start()

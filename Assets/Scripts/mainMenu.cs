@@ -9,13 +9,17 @@ public class mainMenu : MonoBehaviour
     {
         FindObjectOfType<audioManager>().Play("sound");
         SceneManager.LoadScene("SelectionLevel");
-        Debug.Log("1");
     }
 
     public void keluar()
     {
         FindObjectOfType<audioManager>().Play("sound");
         SceneManager.LoadScene("Mainmenu 1");
-        Debug.Log("2");
+    }
+
+    public void tutorial()
+    {
+        FindObjectOfType<audioManager>().Play("sound");
+        SceneManager.LoadScene("Tutorial");
     }
 }

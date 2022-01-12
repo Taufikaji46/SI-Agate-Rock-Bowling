@@ -9,27 +9,24 @@ public class Level : MonoBehaviour
     public void level1()
     {
         FindObjectOfType<audioManager>().Play("clickButton");
-        Debug.Log("get");
         SceneManager.LoadScene("stage_1");
     }
 
     public void level2()
     {
         FindObjectOfType<audioManager>().Play("clickButton");
-        Debug.Log("got");
         SceneManager.LoadScene("stage_2");
     }
 
     public void level3()
     {
         FindObjectOfType<audioManager>().Play("clickButton");
-        Debug.Log("gat");
         SceneManager.LoadScene("stage_3");
     }
 
     public void back()
     {
         FindObjectOfType<audioManager>().Play("clickButton");
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Mainmenu");
     }
 }

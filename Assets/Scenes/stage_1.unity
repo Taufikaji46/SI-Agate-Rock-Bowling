@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.5916643, g: 0.62434626, b: 0.61289144, a: 1}
+  m_IndirectSpecularColor: {r: 0.59166425, g: 0.62434644, b: 0.61289144, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -294,7 +294,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 50, z: -30, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 3364.1875}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -36350,7 +36350,7 @@ MonoBehaviour:
   - name: DinoHit
     clip: {fileID: 8300000, guid: a464e0660bb98664bbc6a9f335829758, type: 3}
     volume: 1
-    pitch: 2
+    pitch: 1
     source: {fileID: 0}
   - name: playerHit
     clip: {fileID: 8300000, guid: bd1669a09388c79438bdb6b0d5ac16db, type: 3}
@@ -36362,15 +36362,15 @@ MonoBehaviour:
     volume: 1
     pitch: 3
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: winningLevel
+    clip: {fileID: 8300000, guid: ed8ccba41a5a99140bdd412b3f5ccc38, type: 3}
+    volume: 1
+    pitch: 3
     source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: losingLevel
+    clip: {fileID: 8300000, guid: 75bbba8f8e4ca714aab001a618611e88, type: 3}
+    volume: 1
+    pitch: 3
     source: {fileID: 0}
   - name: 
     clip: {fileID: 0}
@@ -48123,6 +48123,11 @@ PrefabInstance:
     - target: {fileID: 6480549722111945543, guid: 1caccb2bbad186149a112e38aff55e19,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6480549722200574131, guid: 1caccb2bbad186149a112e38aff55e19,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

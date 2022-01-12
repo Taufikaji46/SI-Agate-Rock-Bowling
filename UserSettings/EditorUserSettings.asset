@@ -18,18 +18,21 @@ EditorUserSettings:
       value: 54095253000c5d085c5e592046710944404e1b7a7c7025607a7e4463bae36469
       flags: 0
     RecentlyUsedSceneGuid-4:
-      value: 57535652520d0b0d090a5a2713275c44424f4f7a7d7c716874284d61e4b46d6f
-      flags: 0
-    RecentlyUsedSceneGuid-5:
       value: 5501050055540f5d595c5c7247770f44144e1d7c7d7825662f7e4967b5b53139
       flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 56570d0351025d5a5b0b087a487b084440164c79297f2065797f4936e3e13268
+      flags: 0
     RecentlyUsedSceneGuid-6:
-      value: 00035250560d51585c0d5a714373094444154b7228797f627d7e1f30bbb7326b
+      value: 57535652520d0b0d090a5a2713275c44424f4f7a7d7c716874284d61e4b46d6f
       flags: 0
     RecentlyUsedSceneGuid-7:
-      value: 010056570053500c5d08087546700f44104e4e7a7a2972322e7b4a60b4b26d3b
+      value: 00035250560d51585c0d5a714373094444154b7228797f627d7e1f30bbb7326b
       flags: 0
     RecentlyUsedSceneGuid-8:
+      value: 010056570053500c5d08087546700f44104e4e7a7a2972322e7b4a60b4b26d3b
+      flags: 0
+    RecentlyUsedSceneGuid-9:
       value: 5405570456000c5e5956582448710a44424f49787f2c2266752c4b60b6b56d68
       flags: 0
   m_VCAutomaticAdd: 1

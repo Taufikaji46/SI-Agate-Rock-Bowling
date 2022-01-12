@@ -99,8 +99,6 @@ public class RockControl : MonoBehaviour
             }
         }
 
-        //Debug.Log(isThrowed);
-        //Debug.Log(rock.velocity.sqrMagnitude);
 
         //agar batu bowling kembali ke posisi awal
         if (transform.position.y < yBoundary)

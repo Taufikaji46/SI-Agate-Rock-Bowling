@@ -11,9 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public int nyawaAwal = 3;
 
     [SerializeField]
-    public static int totalEnemy = 9;
+    public static int totalEnemy = 1;
 
-    public int jumlahMusuh = 9;
+    public int jumlahMusuh = 1;
     public GameObject UIScore;
 
     public GameObject[] hearts;
@@ -29,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
         Time.timeScale = 1f;
         nyawa = nyawaAwal;
         totalEnemy = jumlahMusuh;
-
     }
 
     private void Awake()
@@ -64,15 +63,15 @@ public class PlayerHealth : MonoBehaviour
         if(totalEnemy <= 0 && nyawa >= 1)
         {
             winningLevel();
-
+            
         }
             if (nyawa <= 0)
             {
                 losingLevel();
                 
         }
-       
 
+        Debug.Log(totalEnemy);
     }
 
     public void nyawakurang(int health)
@@ -82,12 +81,14 @@ public class PlayerHealth : MonoBehaviour
     
     public void winningLevel()
     {
+        
         winningLevelUI.SetActive(true);
         StartPause();
     }
 
     public void losingLevel()
     {
+        
         losingLevelUI.SetActive(true);
         StartPause();
 
