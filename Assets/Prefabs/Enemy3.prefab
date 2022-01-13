@@ -109,6 +109,7 @@ MonoBehaviour:
   hpEnemy: 4
   nyawaKurangDino: 1
   kecepatan: 3
+  boneScore: 20
 --- !u!54 &3327933219297196404
 Rigidbody:
   m_ObjectHideFlags: 0

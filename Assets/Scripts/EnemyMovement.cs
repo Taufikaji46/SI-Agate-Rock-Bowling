@@ -11,6 +11,9 @@ public class EnemyMovement : MonoBehaviour
     public int nyawaKurangDino = 1;
     public float kecepatan;
 
+    //skor bone per dino
+    public int boneScore;
+
     private int current;
 
    
@@ -36,7 +39,7 @@ public class EnemyMovement : MonoBehaviour
              if (hpEnemy <= 0)
              {
                 dead();
-                tambahScore.updateScore(1);
+                tambahScore.updateScore(boneScore);
              }
             FindObjectOfType<audioManager>().Play("DinoHit");
 
@@ -48,7 +51,7 @@ public class EnemyMovement : MonoBehaviour
             if (hpEnemy <= 0)
             {
                 dead();
-                tambahScore.updateScore(1);
+                tambahScore.updateScore(boneScore);
             }
             FindObjectOfType<audioManager>().Play("DinoHit");
 
@@ -60,7 +63,7 @@ public class EnemyMovement : MonoBehaviour
             if (hpEnemy <= 0)
             {
                 dead();
-                tambahScore.updateScore(1);
+                tambahScore.updateScore(boneScore);
             }
             FindObjectOfType<audioManager>().Play("DinoHit");
 
