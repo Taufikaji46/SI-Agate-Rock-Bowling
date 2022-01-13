@@ -55,7 +55,7 @@ Only need to implement the GDD to Project
 <br></br>
 5. Game Playable
 <br></br>
-7. Habe fun
+7. Have fun
 
 <br />
 game playable
