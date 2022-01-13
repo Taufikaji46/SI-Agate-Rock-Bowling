@@ -48,10 +48,14 @@ Only need to implement the GDD to Project
 
 ### 13 Januari 2022
 <h1> FINAL UP </h1>
+
 1. UI FIXED
-2. BG music Fixed
-3. Game Playable
-4. Habe fun
+<br></br>
+3. BG music Fixed
+<br></br>
+5. Game Playable
+<br></br>
+7. Habe fun
 
 <br />
 game playable
