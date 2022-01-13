@@ -46,6 +46,13 @@ Only need to implement the GDD to Project
 1. UI all stage fixed
 2. Pause menu all stage added
 
+### 13 Januari 2022
+<h1> FINAL UP </h1>
+1. UI FIXED
+2. BG music Fixed
+3. Game Playable
+4. Habe fun
+
 <br />
 game playable
 <br />
