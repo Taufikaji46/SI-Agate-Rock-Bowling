@@ -15,6 +15,7 @@ public class destoryMusic : MonoBehaviour
             AudioSource sourceA = musik.GetComponent<AudioSource>();
             sourceA.Stop();
         }
+
     }
 
     // Update is called once per frame
