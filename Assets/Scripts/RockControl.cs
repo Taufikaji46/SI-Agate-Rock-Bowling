@@ -76,7 +76,7 @@ public class RockControl : MonoBehaviour
 
             }
 
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) && Input.mousePosition.y < Screen.height / 1.25)
             {
                 yRot += Input.GetAxis("Mouse X") * rotationSpeed;
                
@@ -89,7 +89,7 @@ public class RockControl : MonoBehaviour
                 line.SetPosition(1, transform.position + transform.forward * 4f);
             }
 
-            else if (Input.GetMouseButtonUp(0))
+            else if (Input.GetMouseButtonUp(0) && Input.mousePosition.y < Screen.height / 1.25)
             {
                 rock.velocity = transform.forward * throwPower;
                 line.gameObject.SetActive(false);
